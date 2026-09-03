@@ -14,13 +14,15 @@ class Program
 
         Console.WriteLine("Bem-vindo ao jogo de adivinhação!");
 
+        //Loop principal do jogo (Verificar se o usuário deseja continuar jogando.)
         do
         {        
+           //Loop para o usuário tentar adivinhar o número mágico 
             do
             {
                 Console.Write("Qual o seu palpite? ");
                 palpite = int.Parse(Console.ReadLine());
-                tentativas++;
+                tentativas++; //Realiza a contagem de tentativas do usuário
 
                 if (numeroMagico > palpite)
                 {
