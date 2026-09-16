@@ -1,3 +1,7 @@
+/* Acréscimos:
+1. O programa valida entradas vazias e opções do menu para evitar exceções de execução.
+2. Ao carregar um arquivo, o diário informa a quantidade de registros.*/
+
 using System;
 
 class Program
