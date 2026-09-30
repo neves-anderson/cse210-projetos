@@ -38,15 +38,15 @@ namespace YouTubeMonitoring
 
             foreach (Video video in listaDeVideos)
             {
-                Console.WriteLine($"Título: {video.Titulo}");
-                Console.WriteLine($"Autor: {video.Autor}");
-                Console.WriteLine($"Duração: {video.DuracaoEmSegundos} segundos ({video.DuracaoEmSegundos / 60}m {video.DuracaoEmSegundos % 60}s)");
+                Console.WriteLine($"Título: {video.ObterTitulo()}");
+                Console.WriteLine($"Autor: {video.ObterAutor()}");
+                Console.WriteLine($"Duração: {video.ObterDuracaoEmSegundos()} segundos ({video.ObterDuracaoEmSegundos() / 60}m {video.ObterDuracaoEmSegundos() % 60}s)");
                 Console.WriteLine($"Total de Comentários: {video.ObterQuantidadeComentarios()}");
                 Console.WriteLine("Comentários:");
 
                 foreach (Comentario comentario in video.ObterComentarios())
                 {
-                    Console.WriteLine($"  - [{comentario.NomeAutor}]: \"{comentario.Texto}\"");
+                    Console.WriteLine($"  - [{comentario.ObterNomeAutor()}]: \"{comentario.ObterTexto()}\"");
                 }
 
                 Console.WriteLine("\n--------------------------------------------------\n");

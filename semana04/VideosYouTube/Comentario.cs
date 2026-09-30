@@ -2,13 +2,23 @@ namespace YouTubeMonitoring
 {
     public class Comentario
     {
-        public string NomeAutor { get; set; }
-        public string Texto { get; set; }
+        private string _nomeAutor;
+        private string _texto;
 
         public Comentario(string nomeAutor, string texto)
         {
-            NomeAutor = nomeAutor;
-            Texto = texto;
+            _nomeAutor = nomeAutor;
+            _texto = texto;
+        }
+
+        public string ObterNomeAutor()
+        {
+            return _nomeAutor;
+        }
+
+        public string ObterTexto()
+        {
+            return _texto;
         }
     }
 }
