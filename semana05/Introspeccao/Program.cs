@@ -1,24 +1,17 @@
+/*
+ =============================== RECURSOS ADICIONAIS ==================================
+ 1. Seleção Única Sem Repetição: As classes AtividadeDeReflexao e AtividadeDeListagem
+     mantêm uma fila interna dinâmica para garantir que nenhuma pergunta seja repetido
+     antes que todos os itens tenham sido apresentados.
+ 2. Estatísticas: Há no menu principal uma opção para exibir estatísticas do histórico
+    de atividades. Um arquivo chamado 'log_introspecao.txt' registrando o histórico das 
+    atividades concluídas.
+ ======================================================================================
+*/
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading;
-
-/*
- * ==============================================================================
- * RELATÓRIO DE RECURSOS EXTRAS (PARA NOTA MÁXIMA - 100%)
- * ==============================================================================
- * 1. Seleção Única Sem Repetição: As classes AtividadeDeReflexao e AtividadeDeListagem
- *    mantêm uma fila interna dinâmica para garantir que nenhuma pergunta/prompt seja 
- *    repetido antes que todos os itens tenham sido apresentados.
- * 2. Animação Avançada de Respiração: A AtividadeDeRespiracao exibe uma barra visual 
- *    que cresce durante a inspiração e encolhe durante a expiração.
- * 3. Persistence & Log de Estatísticas: O programa gera e atualiza automaticamente um 
- *    arquivo 'log_introspecao.txt' registrando o histórico das atividades concluídas 
- *    e exibe um resumo global no menu principal.
- * 4. Customização Estética de Cores: Cada atividade possui uma paleta de cor própria 
- *    no Console para melhorar a experiência de usuário.
- * ==============================================================================
- */
 
 namespace AppIntrospecao
 {

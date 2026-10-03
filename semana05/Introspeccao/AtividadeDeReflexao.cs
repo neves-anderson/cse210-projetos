@@ -40,7 +40,7 @@ public class AtividadeDeReflexao : Atividade
             ExibirMensagemInicial();
 
             string reflexao = ObterReflexaoAleatoriaSemRepetir();
-            Console.WriteLine("Considere o seguinte prompt:\n");
+            Console.WriteLine("Considere o seguinte aspecto:\n");
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine($"--- {reflexao} ---");
             Console.ResetColor();
